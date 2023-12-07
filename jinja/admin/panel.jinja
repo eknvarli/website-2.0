@@ -1,0 +1,14 @@
+{% extends 'layout.jinja' %}
+
+{% block title %}Panel{% endblock %}
+
+{% block content %}
+<h1>Login</h1>
+<form action="/panel/edit" method="post"><br>
+    <div class="form-group">
+        <label for="adminkey">Enter Admin Key</label>
+        <input type="text" name="adminkey" class="form-control w-50" id="adminkey" placeholder="Enter Admin Key">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+{% endblock %}

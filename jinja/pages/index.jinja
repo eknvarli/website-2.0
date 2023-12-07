@@ -1,0 +1,46 @@
+{% extends 'layout.jinja' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <div class="main" align="left">
+        <div class="row">
+            <div class="col-md-6 about">
+                <h1>Who is Marqo?</h1>
+                <p class="description">
+                    Hi there! I'm Ekin (a.k.a. Marqo). I'm self-taught back end developer from Sivas/Turkiye. I'm currently working on <a target="_blank" href="https://github.com/realmarqo/dothub">DotHub</a> and i'm freelaner in <a target="_blank" href="https://bionluk.com/ekinvarli">Bionluk</a>
+                </p>
+                <h3>Tech Stack</h3>
+                <img src="https://img.shields.io/badge/python-323330?style=for-the-badge&logo=python">
+                <img src="https://img.shields.io/badge/c-323330?style=for-the-badge&logo=c">
+                <img src="https://img.shields.io/badge/rust-323330?style=for-the-badge&logo=rust">
+                <img src="https://img.shields.io/badge/bash-323330?style=for-the-badge&logo=gnu-bash">
+                <img src="https://img.shields.io/badge/django-323330?style=for-the-badge&logo=django">
+                <img src="https://img.shields.io/badge/flask-323330?style=for-the-badge&logo=flask">
+                <img src="https://img.shields.io/badge/jinja-323330?style=for-the-badge&logo=jinja">
+                <img src="https://img.shields.io/badge/mysql-323330?style=for-the-badge&logo=mysql">
+                <img src="https://img.shields.io/badge/sqlite-323330?style=for-the-badge&logo=sqlite">
+                <img src="https://img.shields.io/badge/vim-323330?style=for-the-badge&logo=vim">
+                <img src="https://img.shields.io/badge/linux-323330?style=for-the-badge&logo=linux">
+                <br><br>
+                <a href="/posts" class="btn btn-primary">View Posts</a>
+            </div>
+            <div class="col-md-6">
+                <img class="logo" src="{{url_for('static',filename='images/logo.jpg')}}">
+            </div>
+        </div>
+        <br><br>
+        <div class="latestposts">
+            <h2>Projects</h2>
+            <li><a href="https://github.com/realmarqo/dothub" target="_blank">DotHub</a> | Dotfile Sharing Platform for Linux Users</li>
+            <li><a href="https://github.com/rettomedia/social" target="_blank">Retto</a> | Next-gen Communication Network</li>
+            <li><a href="https://github.com/realmarqo/website" target="_blank">Website</a> | This Website</li>
+        </div>
+        <br><br><br>
+        <div class="support" align="center">
+            <i>If you want support me, you can use my <a target="_blank" href="https://patreon.com/ekinvarli">Patreon</a> link.</i>
+        </div>
+    </div>
+
+{% endblock %}
